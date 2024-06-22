@@ -15,12 +15,14 @@ export default ( {mode}: ConfigEnv) => {
   let version: string = '';
   if(isDev) {
     version = `v${Package.version} (${branchName} - ${commitHash})`.replace(/(\r\n|\n\r)/gm, "");
+    process.env.VITE_BASEURL = 'http://localhost:5173/';
   }
   else if(isProd) {
     version = `v${Package.version} (${commitHash})`.replace(/(\r\n|\n\r)/gm, "");
   }
 
   const configOptions: UserConfigExport = {
+    base: '',
     plugins: [react(), tsConfigPaths()],
     build: {
       minify: isProd? 'esbuild' : false,
@@ -28,7 +30,7 @@ export default ( {mode}: ConfigEnv) => {
     }
   };
 
-  process.env.VITE_BASEURL = 'http://localhost:5173/';
+  // process.env.VITE_BASEURL = 'http://localhost:5173/';
   process.env.VITE_VERSION = version;
   process.env.VITE_BUILD_DATE = new Date().toLocaleDateString();
   return defineConfig(configOptions);  
