@@ -18,7 +18,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 1,
       fromText: '§9.1',
-      recap: <>You helped push back an Algox attack; <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> asked your help dealing with them further. Satha's Valrath scout spotted a small group heading to Snowscorn Mountain's deadly eastern face, and suspected a secret entrance back there.</>
+      recap: <Typography sx={{fontWeight: 0}}>You helped push back an Algox attack; <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> asked your help dealing with them further. Satha's Valrath scout spotted a small group heading to Snowscorn Mountain's deadly eastern face, and suspected a secret entrance back there.</Typography>
     }]
   }, {
     id: 3,
@@ -27,7 +27,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 1,
       fromText: '§9.1',
-      recap: <>You helped push back an Algox attack; <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> asked your help dealing with them further. Satha's Valrath scout spotted a small group heading to Snowscorn Mountain's deadly eastern face, and suspected a secret entrance back there.</>
+      recap: <Typography sx={{fontWeight: 0}}>You helped push back an Algox attack; <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> asked your help dealing with them further. Satha's Valrath scout spotted a small group heading to Snowscorn Mountain's deadly eastern face, and suspected a secret entrance back there.</Typography>
     }]
   }, {
     id: 4,
@@ -36,11 +36,11 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 2,
       fromText: '§77.3',
-      recap: <>You rescued an Algox Priest, named <CharacterTooltip name="Lanprul" text="Lanprul" />, when investigating a hidden entrance to Snowscorn Peak. She is of the Snowspeakers, a group of Algox who believe their god (<CharacterTooltip name="Geryuu" text="Geryuu" />) communicates to them through falling snow. They are at war with a rival group of Algox, the Icespeakers, who believe they can communicate with their god through the ice which emerges from the ground below. The Icespeakers currently occupy Snowscorn Peak, but the Snowspeakers too the opportunity to take it over when they left to attack Frosthaven.</>
+      recap: <Typography sx={{fontWeight: 0}}>You rescued an Algox Priest, named <CharacterTooltip name="Lanprul" text="Lanprul" />, when investigating a hidden entrance to Snowscorn Peak. She is of the Snowspeakers, a group of Algox who believe their god (<CharacterTooltip name="Geryuu" text="Geryuu" />) communicates to them through falling snow. They are at war with a rival group of Algox, the Icespeakers, who believe they can communicate with their god through the ice which emerges from the ground below. The Icespeakers currently occupy Snowscorn Peak, but the Snowspeakers too the opportunity to take it over when they left to attack Frosthaven.</Typography>
     },{
       fromId: 3,
       fromText: '§8.3',
-      recap: <>You interrupted a battle between two rival groups of Algox. One of the brawler Algox, calling himself an Icespeaker, greeted you and said the Snowspeakers invaded their home while they were away attacking Frosthaven. Icescorn Peak holds religious significance to both Snowspeakers and Icespeakers, who differ in how they believe they should communicate with their god, <CharacterTooltip name="Geryuu" text="Geryuu" />.</>
+      recap: <Typography sx={{fontWeight: 0}}>You interrupted a battle between two rival groups of Algox. One of the brawler Algox, calling himself an Icespeaker, greeted you and said the Snowspeakers invaded their home while they were away attacking Frosthaven. Icescorn Peak holds religious significance to both Snowspeakers and Icespeakers, who differ in how they believe they should communicate with their god, <CharacterTooltip name="Geryuu" text="Geryuu" />.</Typography>
     }]
   }, {
     id: 5,
@@ -73,7 +73,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 4,
       fromText: '§63.1',
-      recap: <>After dealing with the immediate Algox issue threatening Frosthaven, <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> mentioned Lurkers were sighted on the outskirts of Frosthaven territory. You have been asked to check it out.</>
+      recap: <Typography sx={{fontWeight: 0}}>After dealing with the immediate Algox issue threatening Frosthaven, <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> mentioned Lurkers were sighted on the outskirts of Frosthaven territory. You have been asked to check it out.</Typography>
     }]
   }, {
     id: 8,
@@ -82,7 +82,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 4,
       fromText: '§63.1',
-      recap: <>After dealing with the immediate Algox situation, <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> mentioned strange metal constructs were marching through the wastes. Scouts tracked them through Whitefire Wood, then into a frozen valley. She asked you to look into this.</>
+      recap: <Typography sx={{fontWeight: 0}}>After dealing with the immediate Algox situation, <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> mentioned strange metal constructs were marching through the wastes. Scouts tracked them through Whitefire Wood, then into a frozen valley. She asked you to look into this.</Typography>
     }]
   }, {
     id: 9,
@@ -171,7 +171,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 9,
       fromText: '§93.4',
-      recap: <>In the final room of the Catacombs, you found a strange puzzle door with gears and symbols. This meant nothing to you until the Quatryl academic, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, started asking you to investigate “Death Sites” and weird energies that linger in certain parts of the North - probably as the result of a war fought long ago.</>
+      recap: <Typography sx={{fontWeight: 0}}>In the final room of the Catacombs, you found a strange puzzle door with gears and symbols. This meant nothing to you until the Quatryl academic, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, started asking you to investigate “Death Sites” and weird energies that linger in certain parts of the North - probably as the result of a war fought long ago.</Typography>
     }]
   }, {
     id: 18,
@@ -272,11 +272,11 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 18,
       fromText: '§13.1',
-      recap: <>You defeated the Icespeakers, but brought one survivor back to meet <CharacterTooltip name="Lanprul" text="Chief Lanprul" />. The survivor reported that <CharacterTooltip name="Geryuu" text="Geryuu" /> had sent “burrowers” against them and that he was tired of this war. While Chief Lanprul was receptive, another - <CharacterTooltip name="Denpang" text="Denpang" /> - encouraged an all-out assault with you at the Snowspeakers' side. She left, to plan for war. You stayed with Chief Lanprul to plan for peace, instead.</>
+      recap: <Typography sx={{fontWeight: 0}}>You defeated the Icespeakers, but brought one survivor back to meet <CharacterTooltip name="Lanprul" text="Chief Lanprul" />. The survivor reported that <CharacterTooltip name="Geryuu" text="Geryuu" /> had sent “burrowers” against them and that he was tired of this war. While Chief Lanprul was receptive, another - <CharacterTooltip name="Denpang" text="Denpang" /> - encouraged an all-out assault with you at the Snowspeakers' side. She left, to plan for war. You stayed with Chief Lanprul to plan for peace, instead.</Typography>
     },{
       fromId: 19,
       fromText: '§58.1',
-      recap: <>You found that the spirits of Skyhall - a place of great religious significance - had turned against the Icespeakers. While you laid them to rest, <CharacterTooltip name="Elland" text="Chief Elland" /> declared this could not continue - that war was bringing ruin to all the Algox. An older woman among them, <CharacterTooltip name="Putargal" text="Putargal" />, instead urged vengeance on the Snowspeakers for what they've done to Snowscorn and Skyhall. She left to plan for an assault against their enemies, but you stayed with Chief Elland to plan for peace.</>
+      recap: <Typography sx={{fontWeight: 0}}>You found that the spirits of Skyhall - a place of great religious significance - had turned against the Icespeakers. While you laid them to rest, <CharacterTooltip name="Elland" text="Chief Elland" /> declared this could not continue - that war was bringing ruin to all the Algox. An older woman among them, <CharacterTooltip name="Putargal" text="Putargal" />, instead urged vengeance on the Snowspeakers for what they've done to Snowscorn and Skyhall. She left to plan for an assault against their enemies, but you stayed with Chief Elland to plan for peace.</Typography>
     }]
   }, {
     id: 29,
@@ -285,7 +285,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 18,
       fromText: '§13.1',
-      recap: <>You defeated the Icespeakers, but brought one survivor back to meet <CharacterTooltip name="Lanprul" text="Chief Lanprul" />. The survivor reported that <CharacterTooltip name="Geryuu" text="Geryuu" /> had sent “burrowers” against them and that he was tired of this war. While Chief Lanprul was receptive, another - <CharacterTooltip name="Denpang" text="Denpang" /> - encouraged an all-out assault with you at the Snowspeakers' side. She left, to plan for war. You left with Denpang to assist with the assault for a final Snowspeaker victory.</>
+      recap: <Typography sx={{fontWeight: 0}}>You defeated the Icespeakers, but brought one survivor back to meet <CharacterTooltip name="Lanprul" text="Chief Lanprul" />. The survivor reported that <CharacterTooltip name="Geryuu" text="Geryuu" /> had sent “burrowers” against them and that he was tired of this war. While Chief Lanprul was receptive, another - <CharacterTooltip name="Denpang" text="Denpang" /> - encouraged an all-out assault with you at the Snowspeakers' side. She left, to plan for war. You left with Denpang to assist with the assault for a final Snowspeaker victory.</Typography>
     }]
   }, {
     id: 30,
@@ -294,7 +294,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 19,
       fromText: '§58.1',
-      recap: <>You found that the spirits of Skyhall - a place of great religious significance - had turned against the Icespeakers. While you laid them to rest, <CharacterTooltip name="Elland" text="Chief Elland" /> declared this could not continue - that war was bringing ruin to all the Algox. An older woman among them, <CharacterTooltip name="Putargal" text="Putargal" />, instead urged vengeance on the Snowspeakers for what they've done to Snowscorn and Skyhall. She left to plan for an assault against their enemies; you went with her to join the battle.</>
+      recap: <Typography sx={{fontWeight: 0}}>You found that the spirits of Skyhall - a place of great religious significance - had turned against the Icespeakers. While you laid them to rest, <CharacterTooltip name="Elland" text="Chief Elland" /> declared this could not continue - that war was bringing ruin to all the Algox. An older woman among them, <CharacterTooltip name="Putargal" text="Putargal" />, instead urged vengeance on the Snowspeakers for what they've done to Snowscorn and Skyhall. She left to plan for an assault against their enemies; you went with her to join the battle.</Typography>
     }]
   }, {
     id: 31,
@@ -303,7 +303,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 20,
       fromText: '§57.2',
-      recap: <>To defeat all the automata, you needed to destroy a strange glowing orb. Once defeated, you were able to investigate a strange door sealed by a complex puzzle door with gears and symbols. This meant nothing to you until the Quatryl academic, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, started asking you to investigate “Death Sites” and weird energies that linger in certain parts of the North - probably as the result of a war fought long ago.</>
+      recap: <Typography sx={{fontWeight: 0}}>To defeat all the automata, you needed to destroy a strange glowing orb. Once defeated, you were able to investigate a strange door sealed by a complex puzzle door with gears and symbols. This meant nothing to you until the Quatryl academic, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, started asking you to investigate “Death Sites” and weird energies that linger in certain parts of the North - probably as the result of a war fought long ago.</Typography>
     }]
   }, {
     id: 32,
@@ -321,7 +321,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 22,
       fromText: '§96.4 & §62.2',
-      recap: <>There, you were set upon by Lurkers drawn to the pull of the Shards you carry. They wrecked your boat, so you decided to search for another means of travel. Frosthaven's Tinkerer, <CharacterTooltip name="Pinter Droman" text="Pinter Droman" />, designed a bathysphere - a craft to travel safely underwater - but it needed a power source. He suggested you might find one at the heart of the Radiant Forest.</>
+      recap: <Typography sx={{fontWeight: 0}}>There, you were set upon by Lurkers drawn to the pull of the Shards you carry. They wrecked your boat, so you decided to search for another means of travel. Frosthaven's Tinkerer, <CharacterTooltip name="Pinter Droman" text="Pinter Droman" />, designed a bathysphere - a craft to travel safely underwater - but it needed a power source. He suggested you might find one at the heart of the Radiant Forest.</Typography>
     }]
   }, {
     id: 34,
@@ -343,7 +343,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 25,
       fromText: '§128.2',
-      recap: <>There, you rescued a Quatryl scholar, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, who was studying the Unfettered. He has been recovering in Frosthaven, and believes he developed a device which would deactivate the Unfettered. He needs materials first, though, and asked you to bring him back so he could find the parts he needs.</>
+      recap: <Typography sx={{fontWeight: 0}}>There, you rescued a Quatryl scholar, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, who was studying the Unfettered. He has been recovering in Frosthaven, and believes he developed a device which would deactivate the Unfettered. He needs materials first, though, and asked you to bring him back so he could find the parts he needs.</Typography>
     }]
   }, {
     id: 36,
@@ -352,7 +352,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 26,
       fromText: '§169.3',
-      recap: <>There, you rescued a Quatryl scholar, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, who was studying the Unfettered. He has been recovering in Frosthaven. He showed you some maps for the complex, and two possible paths to the core. You elected to sneak above them through the ducts.</>
+      recap: <Typography sx={{fontWeight: 0}}>There, you rescued a Quatryl scholar, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, who was studying the Unfettered. He has been recovering in Frosthaven. He showed you some maps for the complex, and two possible paths to the core. You elected to sneak above them through the ducts.</Typography>
     }]
   }, {
     id: 37,
@@ -361,7 +361,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 26,
       fromText: '§169.3',
-      recap: <>There, you rescued a Quatryl scholar, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, who was studying the Unfettered. He has been recovering in Frosthaven. He showed you some maps for the complex, and two possible paths to the core. You elected to take a deeper path, which may have once been a transportation system.</>
+      recap: <Typography sx={{fontWeight: 0}}>There, you rescued a Quatryl scholar, <CharacterTooltip name="Crain Tallengyr" text="Crain" />, who was studying the Unfettered. He has been recovering in Frosthaven. He showed you some maps for the complex, and two possible paths to the core. You elected to take a deeper path, which may have once been a transportation system.</Typography>
     }]
   }, {
     id: 38,
@@ -390,7 +390,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 30,
       fromText: '§34.2',
-      recap: <>The Icespeakers were victorious, but you've had guilt and nightmares ever since. A small group of Snowspeakers survived, and asked <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> for aid. You made an agreement with Satha and set out to see if you could help.</>
+      recap: <Typography sx={{fontWeight: 0}}>The Icespeakers were victorious, but you've had guilt and nightmares ever since. A small group of Snowspeakers survived, and asked <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> for aid. You made an agreement with Satha and set out to see if you could help.</Typography>
     }]
   }, {
     id: 41,
@@ -419,7 +419,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 35,
       fromText: '§55.1',
-      recap: <>After rooting around for scrap, <CharacterTooltip name="Crain Tallengyr" text="Crain" /> finished his Crain Unfettered Disabling Device. Now that it's built, you could head with him for the core of the complex.</>
+      recap: <Typography sx={{fontWeight: 0}}>After rooting around for scrap, <CharacterTooltip name="Crain Tallengyr" text="Crain" /> finished his Crain Unfettered Disabling Device. Now that it's built, you could head with him for the core of the complex.</Typography>
     }]
   }, {
     id: 44,
@@ -471,7 +471,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 39,
       fromText: '§84.2',
-      recap: <>The Icespeakers were under attack by possessed members of their own tribe, and instead of finishing off the rest of these Algox, you rescued them. An Icespeaker named <CharacterTooltip name="Putargal" text="Putargal" /> thanked you; she asked your help in rooting out the rest of the possessed Algox and finding the source of the corruption.</>
+      recap: <Typography sx={{fontWeight: 0}}>The Icespeakers were under attack by possessed members of their own tribe, and instead of finishing off the rest of these Algox, you rescued them. An Icespeaker named <CharacterTooltip name="Putargal" text="Putargal" /> thanked you; she asked your help in rooting out the rest of the possessed Algox and finding the source of the corruption.</Typography>
     }]
   }, {
     id: 48,
@@ -480,7 +480,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 40,
       fromText: '§71.2',
-      recap: <>You found the Snowspeaker refugees under attack by Unfettered. You did your best to save as many of the injured as you could. A young woman of the Snowspeakers, <CharacterTooltip name="Denpang" text="Denpang" />, thanked you and asked for a bit more help - that you bring her remaining clan to an island called Frai'd Tog, where the remaining Snowspeakers could live in peace.</>
+      recap: <Typography sx={{fontWeight: 0}}>You found the Snowspeaker refugees under attack by Unfettered. You did your best to save as many of the injured as you could. A young woman of the Snowspeakers, <CharacterTooltip name="Denpang" text="Denpang" />, thanked you and asked for a bit more help - that you bring her remaining clan to an island called Frai'd Tog, where the remaining Snowspeakers could live in peace.</Typography>
     }]
   }, {
     id: 49,
@@ -489,7 +489,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 42,
       fromText: '§114.2 & §94.4',
-      recap: <>The test of the bathysphere was successful. A few weeks later, <CharacterTooltip name="Sun in Shallows" text="Sun in Shallows" /> visited Frosthaven. She reported that she and a group of fellow Lurkers tried to obtain a Shard that was corrupted by shadows, but she and her allies were defeated. Until that Shard is freed from evil, it would keep corrupting Lurkers, and Frosthaven would never be safe. More, the Crown cannot be reunited without it. Pinter recommended turning your shards into a psychic bomb to stun the Lurkers, but you decided to find another way in.</>
+      recap: <Typography sx={{fontWeight: 0}}>The test of the bathysphere was successful. A few weeks later, <CharacterTooltip name="Sun in Shallows" text="Sun in Shallows" /> visited Frosthaven. She reported that she and a group of fellow Lurkers tried to obtain a Shard that was corrupted by shadows, but she and her allies were defeated. Until that Shard is freed from evil, it would keep corrupting Lurkers, and Frosthaven would never be safe. More, the Crown cannot be reunited without it. Pinter recommended turning your shards into a psychic bomb to stun the Lurkers, but you decided to find another way in.</Typography>
     }]
   }, {
     id: 50,
@@ -498,7 +498,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 42,
       fromText: '§114.2 & §168.2',
-      recap: <>The test of the bathysphere was successful. A few weeks later, <CharacterTooltip name="Sun in Shallows" text="Sun in Shallows" /> visited Frosthaven. She reported that she and a group of fellow Lurkers tried to obtain a Shard that was corrupted by shadows, but she and her allies were defeated. Until that Shard is freed from evil, it would keep corrupting Lurkers, and Frosthaven would never be safe. More, the Crown cannot be reunited without it. <CharacterTooltip name="Pinter Droman" text="Pinter" /> recommended turning your shards into a psychic bomb to stun the Lurkers, and you decided to trust him.</>
+      recap: <Typography sx={{fontWeight: 0}}>The test of the bathysphere was successful. A few weeks later, <CharacterTooltip name="Sun in Shallows" text="Sun in Shallows" /> visited Frosthaven. She reported that she and a group of fellow Lurkers tried to obtain a Shard that was corrupted by shadows, but she and her allies were defeated. Until that Shard is freed from evil, it would keep corrupting Lurkers, and Frosthaven would never be safe. More, the Crown cannot be reunited without it. <CharacterTooltip name="Pinter Droman" text="Pinter" /> recommended turning your shards into a psychic bomb to stun the Lurkers, and you decided to trust him.</Typography>
     }]
   }, {
     id: 51,
@@ -547,7 +547,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 52,
       fromText: '§90.2',
-      recap: <><CharacterTooltip name="Mar'ogh" text="Mar'ogh" /> opened a strange portal for the ritual's completion. Nothing is ever that easy though; you found you needed to defeat creatures of ice and snow and use their essence to form a glyph. Once done, the two emissaries finished their ritual, combining the ice and the snow, to form the Unyielding Shard. Inside it, they found the true words of <CharacterTooltip name="Geryuu" text="Geryuu" /> and learned the Algox have been deceived by some other power. You needed to return to Snowscorn to embed the Shard into the Heart of Ice, remove the darkness that has fallen upon the Algox, and return them to Geryuu.</>
+      recap: <Typography sx={{fontWeight: 0}}><CharacterTooltip name="Mar'ogh" text="Mar'ogh" /> opened a strange portal for the ritual's completion. Nothing is ever that easy though; you found you needed to defeat creatures of ice and snow and use their essence to form a glyph. Once done, the two emissaries finished their ritual, combining the ice and the snow, to form the Unyielding Shard. Inside it, they found the true words of <CharacterTooltip name="Geryuu" text="Geryuu" /> and learned the Algox have been deceived by some other power. You needed to return to Snowscorn to embed the Shard into the Heart of Ice, remove the darkness that has fallen upon the Algox, and return them to Geryuu.</Typography>
     }]
   }, {
     id: 56,
@@ -647,7 +647,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 62,
       fromText: '§69.1',
-      recap: <>The first Seal was deep below the Crystal Fields. While Crain worked, the Harbinger sent guardians to repel you. You held the monsters at bay and bought him time. Ultimately, <CharacterTooltip name="Crain Tallengyr" text="Crain" /> found the right place and activated his machine. New lines grew in the Seal's design. It seemed like <CharacterTooltip name="Terra" text="Terra" />'s plan might work. You headed off to the Savvas's source of life.`</>
+      recap: <Typography sx={{fontWeight: 0}}>The first Seal was deep below the Crystal Fields. While Crain worked, the Harbinger sent guardians to repel you. You held the monsters at bay and bought him time. Ultimately, <CharacterTooltip name="Crain Tallengyr" text="Crain" /> found the right place and activated his machine. New lines grew in the Seal's design. It seemed like <CharacterTooltip name="Terra" text="Terra" />'s plan might work. You headed off to the Savvas's source of life.`</Typography>
     }]
   }, {
     id: 64,
@@ -656,7 +656,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 63,
       fromText: '§73.2',
-      recap: <>The second seal was in another tunnel - between where the Harbinger sleeps and the Savvas source of life; through this, it was corrupting the Savvas. You hoped strengthening the seal would preserve this source of life while freeing them from corruption. Fortunately - it worked, and the Savvas were freed from its influence. <CharacterTooltip name="Crain Tallengyr" text="Crain" /> had warned you that the Harbinger may try to emerge once the second seal was repaired, but that he didn't yet know where the third seal was. Turns out, it was in Frosthaven.</>
+      recap: <Typography sx={{fontWeight: 0}}>The second seal was in another tunnel - between where the Harbinger sleeps and the Savvas source of life; through this, it was corrupting the Savvas. You hoped strengthening the seal would preserve this source of life while freeing them from corruption. Fortunately - it worked, and the Savvas were freed from its influence. <CharacterTooltip name="Crain Tallengyr" text="Crain" /> had warned you that the Harbinger may try to emerge once the second seal was repaired, but that he didn't yet know where the third seal was. Turns out, it was in Frosthaven.</Typography>
     }]
   }, {
     id: 65,
@@ -742,7 +742,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 72,
       fromText: '§79.1',
-      recap: <>You took the Cinnabar, <CharacterTooltip name="Lihrey" text="Lihrey" />'s ship, to the base of a mountain. The scale was embedded in a giant block of ice, which you worked to haul back to the ship - fighting through a series of defenses to do so. He told you he needed to bring it back to Frosthaven in order to melt the block. You headed back.</>
+      recap: <Typography sx={{fontWeight: 0}}>You took the Cinnabar, <CharacterTooltip name="Lihrey" text="Lihrey" />'s ship, to the base of a mountain. The scale was embedded in a giant block of ice, which you worked to haul back to the ship - fighting through a series of defenses to do so. He told you he needed to bring it back to Frosthaven in order to melt the block. You headed back.</Typography>
     }]
   }, {
     id: 74,
@@ -776,7 +776,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 74,
       fromText: '§176.1',
-      recap:<>Unfortunately, the Fish King got there first and stole the third piece of the scale. <CharacterTooltip name="Lihrey" text="Lihrey" /> told you his device could now serve to track down the Fish King's lair, however, so not all was lost.</>
+      recap:<Typography sx={{fontWeight: 0}}>Unfortunately, the Fish King got there first and stole the third piece of the scale. <CharacterTooltip name="Lihrey" text="Lihrey" /> told you his device could now serve to track down the Fish King's lair, however, so not all was lost.</Typography>
     }]
   }, {
     id: 76,
@@ -785,7 +785,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 74,
       fromText: '§163.4',
-      recap: <>You obtained the third piece of the scale for the Fish King - and despite <CharacterTooltip name="Lihrey" text="Lihrey" />'s warnings, went to deliver it to your Abael ally.</>
+      recap: <Typography sx={{fontWeight: 0}}>You obtained the third piece of the scale for the Fish King - and despite <CharacterTooltip name="Lihrey" text="Lihrey" />'s warnings, went to deliver it to your Abael ally.</Typography>
     }]
   }, {
     id: 77,
@@ -865,9 +865,9 @@ export const scenarios: Scenario[] = [{
     type: JobPosting,
     predecessors: [{
       fromText: 'Job Posting §180.3',
-      recap: <><CharacterTooltip name="Glint" text="Glint" />, the Inox record-keeper, gave you a bounty. There were three reports of oozes, and they have apparently eaten a herd of sheep. Glint doesn't think there's anything to it, but you know better.
-
-      Well.  Don't say you weren't warned.</>
+      recap: <><Typography sx={{fontWeight: 0}}><CharacterTooltip name="Glint" text="Glint" />, the Inox record-keeper, gave you a bounty. There were three reports of oozes, and they have apparently eaten a herd of sheep. Glint doesn't think there's anything to it, but you know better.</Typography>
+      <br/>
+      <Typography sx={{fontWeight: 0}}>Well.  Don't say you weren't warned.</Typography></>
     }]
   }, {
     id: 85,
@@ -875,7 +875,7 @@ export const scenarios: Scenario[] = [{
     type: JobPosting,
     predecessors: [{
       fromText: 'Job Posting §166.4',
-      recap: <>A woman came to <CharacterTooltip name="Glint" text="Glint" /> to get immediate assistance; her husband had told her if he hadn't returned by the afternoon, she was supposed to find help. She handed you a map of “where he went spelunking.”</>
+      recap: <Typography sx={{fontWeight: 0}}>A woman came to <CharacterTooltip name="Glint" text="Glint" /> to get immediate assistance; her husband had told her if he hadn't returned by the afternoon, she was supposed to find help. She handed you a map of “where he went spelunking.”</Typography>
     }]
   }, {
     id: 86,
@@ -891,7 +891,7 @@ export const scenarios: Scenario[] = [{
     type: JobPosting,
     predecessors: [{
       fromText: 'Job Posting §41.1',
-      recap: <><CharacterTooltip name="Captain Olmstead" text="Captain Olmstead" /> brought you to an Inox girl, found nearly frozen, just outside of Frosthaven. She told him “The Collector” has been holding her and her family for weeks. The girl managed to tell you where this “Collector” is.</>
+      recap: <Typography sx={{fontWeight: 0}}><CharacterTooltip name="Captain Olmstead" text="Captain Olmstead" /> brought you to an Inox girl, found nearly frozen, just outside of Frosthaven. She told him “The Collector” has been holding her and her family for weeks. The girl managed to tell you where this “Collector” is.</Typography>
     }]
   }, {
     id: 88,
@@ -933,7 +933,7 @@ export const scenarios: Scenario[] = [{
     type: JobPosting,
     predecessors: [{
       fromText: 'Job Posting §104.1',
-      recap: <><CharacterTooltip name="Captain Doghogger" text="Captain Doghogger" /> has heard there's an abandoned ship full of supplies out on the sea. A fishing crew spotted it, and he's looking for a team to relieve it of some supplies and/or treasure.</>
+      recap: <Typography sx={{fontWeight: 0}}><CharacterTooltip name="Captain Doghogger" text="Captain Doghogger" /> has heard there's an abandoned ship full of supplies out on the sea. A fishing crew spotted it, and he's looking for a team to relieve it of some supplies and/or treasure.</Typography>
     }]
   }, {
     id: 93,
@@ -949,7 +949,7 @@ export const scenarios: Scenario[] = [{
     type: JobPosting,
     predecessors: [{
       fromText: 'Job Posting §175.1',
-      recap: <><CharacterTooltip name="Eros" text="Eros" />, the Savvas playwright, has told you a human painter, Camilla, is missing. She'd gone off to see a pack of “rare, majestic beasts” in fields off to the far east, and hasn't returned. He's asked you to go find her, in the name of arts and beauty.</>
+      recap: <Typography sx={{fontWeight: 0}}><CharacterTooltip name="Eros" text="Eros" />, the Savvas playwright, has told you a human painter, Camilla, is missing. She'd gone off to see a pack of “rare, majestic beasts” in fields off to the far east, and hasn't returned. He's asked you to go find her, in the name of arts and beauty.</Typography>
     }]
   }, {
     id: 95,
@@ -966,7 +966,7 @@ export const scenarios: Scenario[] = [{
     type: JobPosting,
     predecessors: [{
       fromText: 'Job Posting §17.2',
-      recap: <>A traveler came to Frosthaven, from across the Whitefire Woods, with word of an active Unfettered complex - it was lit up and humming. <CharacterTooltip name="Glint" text="Glint" /> characteristically tried to get rid of him, but you showed up at just the right time. He's asked you to go check this complex out.</>
+      recap: <Typography sx={{fontWeight: 0}}>A traveler came to Frosthaven, from across the Whitefire Woods, with word of an active Unfettered complex - it was lit up and humming. <CharacterTooltip name="Glint" text="Glint" /> characteristically tried to get rid of him, but you showed up at just the right time. He's asked you to go check this complex out.</Typography>
     }]
   }, {
     id: 97,
@@ -1127,7 +1127,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 4,
       fromText: 'Calendar §156.1',
-      recap: <>Frosthaven's resident Tinkerer, <CharacterTooltip name="Pinter Droman" text="Pinter Droman" />, thinks there's a new opportunity to create a pass through the Copperneck Mountains after a recent landslide. It could save several days on each journey. Pinter has created some bombs to help clear the remaining rubble, but the local wildlife hasn't felt kindly towards this course of action. He's asked you to put some explosives in certain locations there, since unlike his normal workers, you can protect yourselves.</>
+      recap: <Typography sx={{fontWeight: 0}}>Frosthaven's resident Tinkerer, <CharacterTooltip name="Pinter Droman" text="Pinter Droman" />, thinks there's a new opportunity to create a pass through the Copperneck Mountains after a recent landslide. It could save several days on each journey. Pinter has created some bombs to help clear the remaining rubble, but the local wildlife hasn't felt kindly towards this course of action. He's asked you to put some explosives in certain locations there, since unlike his normal workers, you can protect yourselves.</Typography>
     }]
   }, {
     id: 115,
@@ -1147,7 +1147,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 115,
       fromText: '§66.2',
-      recap: <>Once that was done, <CharacterTooltip name="Pinter Droman" text="Pinter" /> and his crew were able to complete the road. <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> asked some local merchants to do a test run on this new shortcut, and asked you to guard the first caravans going south.</>
+      recap: <Typography sx={{fontWeight: 0}}>Once that was done, <CharacterTooltip name="Pinter Droman" text="Pinter" /> and his crew were able to complete the road. <CharacterTooltip name="Mayor Satha" text="Mayor Satha" /> asked some local merchants to do a test run on this new shortcut, and asked you to guard the first caravans going south.</Typography>
     }]
   }, {
     id: 117,
@@ -1179,7 +1179,7 @@ export const scenarios: Scenario[] = [{
     type: Other,
     predecessors: [{
       fromText: 'WO-18',
-      recap: <>Some force has been toying with the minds of Frosthaven's residents, including some guards - one of whom stabbed another. <CharacterTooltip name="Captain Olmstead" text="Captain Olmstead" /> reported that this has been happening a lot this week. He's pretty sure something has set itself up in an abandoned cabin. Whatever it was then tried to make you disembowel yourselves. You figured you should check this out.</>
+      recap: <Typography sx={{fontWeight: 0}}>Some force has been toying with the minds of Frosthaven's residents, including some guards - one of whom stabbed another. <CharacterTooltip name="Captain Olmstead" text="Captain Olmstead" /> reported that this has been happening a lot this week. He's pretty sure something has set itself up in an abandoned cabin. Whatever it was then tried to make you disembowel yourselves. You figured you should check this out.</Typography>
     }]
   }, {
     id: 121,
@@ -1325,7 +1325,7 @@ export const scenarios: Scenario[] = [{
     type: Other,
     predecessors: [{
       fromText: 'Building 83, Level 2 §116.3',
-      recap: <><CharacterTooltip name="Eddica" text="Eddica" />, the Valrath Librarian, has been researching certain magic tomes, written by the Savvas spellcaster Belara. She thinks she's found the location of the Tome of Conflict. There's a tower referenced in older texts, said to be in the Radiant Forest - but it's not on any newer surveys. She thinks this might be where the Tome could be found.</>
+      recap: <Typography sx={{fontWeight: 0}}><CharacterTooltip name="Eddica" text="Eddica" />, the Valrath Librarian, has been researching certain magic tomes, written by the Savvas spellcaster Belara. She thinks she's found the location of the Tome of Conflict. There's a tower referenced in older texts, said to be in the Radiant Forest - but it's not on any newer surveys. She thinks this might be where the Tome could be found.</Typography>
     }]
   }, {
     id: 135,
