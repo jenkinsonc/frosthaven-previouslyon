@@ -12,6 +12,7 @@ export default ( {mode}: ConfigEnv) => {
   const commitHash = execSync('git rev-parse --short=8 HEAD').toString();
   const branchName = execSync('git show -s --pretty=%D HEAD').toString().split(',').pop()?.trim();
 
+  process.env.VITE_BASEURL = '/';
   let version: string = '';
   if(isDev) {
     version = `v${Package.version} (${branchName} - ${commitHash})`.replace(/(\r\n|\n\r)/gm, "");
