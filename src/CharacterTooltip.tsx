@@ -14,13 +14,14 @@ const CharacterTooltip = ({name, text}: ICharacterTooltipProps) => {
   return (
     <Tooltip sx={{"& .MuiTooltip-arrow": { fontSize: "large"}}} arrow title={
       <React.Fragment>
-        <Typography color="inherit">{name}</Typography>
+        <Typography component={'span'} color="inherit">{name}</Typography>
         <Divider sx={{borderColor:'white', marginBottom: '5px'}} />
-        <Typography variant="body2">{char?.description}</Typography>
-        <Typography variant="overline">{char?.firstAppearance && `First appearance: ${char?.firstAppearance}`}</Typography>
+        <Typography component={'span'} variant="body2">{char?.description}</Typography>
+        <br/>
+        <Typography component={'span'} variant="overline">{char?.firstAppearance && `First appearance: ${char?.firstAppearance}`}</Typography>
       </React.Fragment>
     }>
-      <Typography display="inline" sx={{fontWeight: 'bold'}}>{text}</Typography>
+      <Typography component={'span'} display="inline" sx={{fontWeight: 'bold'}}>{text}</Typography>
     </Tooltip>
   );
 };
