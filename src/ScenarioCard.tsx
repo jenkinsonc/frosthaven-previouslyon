@@ -20,7 +20,7 @@ const ScenarioCard = ({scenarioId, setScenario}: IScenarioCardProps) => {
 
   React.useEffect(() => {
     window.scrollTo(0, 0)
-  }, []);
+  }, [scenarioId]);
 
   return (
     <Card sx={{width: '80vw', maxWidth: '80vw'}}>
