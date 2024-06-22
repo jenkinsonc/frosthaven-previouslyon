@@ -28,7 +28,7 @@ const App = () => {
         </Toolbar>
       </AppBar>
     </Box>
-    <Box sx={{marginTop: '40px', padding: '50px', display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
+    <Box sx={{marginTop: '50px', padding: '50px', display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
       {
         selectedScenario == null
         ? <ScenarioGrid setScenario={setSelectedScenario} />
