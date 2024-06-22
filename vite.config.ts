@@ -12,7 +12,6 @@ export default ( {mode}: ConfigEnv) => {
   const commitHash = execSync('git rev-parse --short=8 HEAD').toString();
   const branchName = execSync('git show -s --pretty=%D HEAD').toString().split(',').pop()?.trim();
 
-  process.env.VITE_BASEURL = '/';
   let version: string = '';
   if(isDev) {
     version = `v${Package.version} (${branchName} - ${commitHash})`.replace(/(\r\n|\n\r)/gm, "");
@@ -20,10 +19,11 @@ export default ( {mode}: ConfigEnv) => {
   }
   else if(isProd) {
     version = `v${Package.version} (${commitHash})`.replace(/(\r\n|\n\r)/gm, "");
+    process.env.VITE_BASEURL = '/frosthaven-previouslyon/';
   }
 
   const configOptions: UserConfigExport = {
-    base: '',
+    base: isProd ? '/frosthaven-previouslyon/' : '',
     plugins: [react(), tsConfigPaths()],
     build: {
       minify: isProd? 'esbuild' : false,
@@ -31,7 +31,6 @@ export default ( {mode}: ConfigEnv) => {
     }
   };
 
-  // process.env.VITE_BASEURL = 'http://localhost:5173/';
   process.env.VITE_VERSION = version;
   process.env.VITE_BUILD_DATE = new Date().toLocaleDateString();
   return defineConfig(configOptions);  
