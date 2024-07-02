@@ -32,7 +32,16 @@ const ScenarioCard = ({scenarioId, setScenario}: IScenarioCardProps) => {
             </Grid>
             <Grid item>
               <Tooltip title={<Typography variant="body1">{scenario.type.name}</Typography>}>
-                <Box sx={{border: `1px solid ${scenario.type.textColor}`, borderRadius:'20px', width:'40px', height: '40px', backgroundColor:scenario.type.color}} />
+              <Box sx={{
+                border: '1px solid black',
+                borderRadius: '25px',
+                backgroundColor: scenario.type.color,
+                width: '45px',
+                textAlign: 'center'}}>
+
+              <Typography variant="h4" sx={{fontFamily: 'Gloomhaven', color: scenario.type.textColor}}>{scenario.id}</Typography>
+
+            </Box>
               </Tooltip>
             </Grid>
           </Grid>
