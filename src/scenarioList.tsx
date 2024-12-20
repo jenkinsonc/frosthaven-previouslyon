@@ -36,7 +36,7 @@ export const scenarios: Scenario[] = [{
     predecessors: [{
       fromId: 2,
       fromText: '§77.3',
-      recap: <Typography sx={{fontWeight: 0}}>You rescued an Algox Priest, named <CharacterTooltip name="Lanprul" text="Lanprul" />, when investigating a hidden entrance to Snowscorn Peak. She is of the Snowspeakers, a group of Algox who believe their god (<CharacterTooltip name="Geryuu" text="Geryuu" />) communicates to them through falling snow. They are at war with a rival group of Algox, the Icespeakers, who believe they can communicate with their god through the ice which emerges from the ground below. The Icespeakers currently occupy Snowscorn Peak, but the Snowspeakers too the opportunity to take it over when they left to attack Frosthaven.</Typography>
+      recap: <Typography sx={{fontWeight: 0}}>You rescued an Algox Priest, named <CharacterTooltip name="Lanprul" text="Lanprul" />, when investigating a hidden entrance to Snowscorn Peak. She is of the Snowspeakers, a group of Algox who believe their god (<CharacterTooltip name="Geryuu" text="Geryuu" />) communicates to them through falling snow. They are at war with a rival group of Algox, the Icespeakers, who believe they can communicate with their god through the ice which emerges from the ground below. The Icespeakers currently occupy Snowscorn Peak, but the Snowspeakers took the opportunity to take it over when they left to attack Frosthaven.</Typography>
     },{
       fromId: 3,
       fromText: '§8.3',
