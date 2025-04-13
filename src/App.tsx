@@ -1,4 +1,3 @@
-import React from "react";
 import { ScenarioGrid } from "./ScenarioGrid";
 import { AppBar, Box, Grid, Link, Toolbar, Typography } from "@mui/material";
 import { Outlet, useMatch } from "react-router";
