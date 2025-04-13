@@ -1,9 +1,11 @@
+import React from "react";
 import { ScenarioGrid } from "./ScenarioGrid";
+import { ScenarioCard } from "./ScenarioCard";
 import { AppBar, Box, Grid, Link, Toolbar, Typography } from "@mui/material";
-import { Outlet, useMatch } from "react-router";
 
 const App = () => {
-  const scenarioId = useMatch('/scenarios/:scenarioId');
+
+  const [selectedScenario, setSelectedScenario] = React.useState<number|null>(null);
 
   return (
     <>
@@ -28,9 +30,9 @@ const App = () => {
     </Box>
     <Box sx={{marginTop: '50px', padding: '50px', display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
       {
-        scenarioId == null
-        ? <ScenarioGrid />
-        : <Outlet />
+        selectedScenario == null
+        ? <ScenarioGrid setScenario={setSelectedScenario} />
+        : <ScenarioCard scenarioId={selectedScenario} setScenario={setSelectedScenario} />
       }
     </Box>
     </>
