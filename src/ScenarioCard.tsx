@@ -5,16 +5,14 @@ import React from "react";
 import { PredecessorChoice } from "./PredecessorChoice";
 import { ScenarioLink } from "./types/ScenarioLink";
 import { ScenarioRecap } from "./ScenarioRecap";
+import { useNavigate, useParams } from "react-router";
 
-type IScenarioCardProps = {
-  scenarioId: number,
-  setScenario: (scenarioId: number|null) => void
-}
-
-const ScenarioCard = ({scenarioId, setScenario}: IScenarioCardProps) => {
+const ScenarioCard = () => {
 
   const theme = useTheme();
+  const { scenarioId = 1} = useParams();
   const scenario = scenarios.find(s => s.id == scenarioId)!;
+  const navigate = useNavigate();
   
   const [predecessor, setPredecessor] = React.useState<ScenarioLink|undefined>(scenario.predecessors.length > 1 ? undefined : scenario.predecessors[0]);
 
@@ -60,7 +58,7 @@ const ScenarioCard = ({scenarioId, setScenario}: IScenarioCardProps) => {
 
       </CardContent>
       <CardActions sx={{backgroundColor: '#f3d3a4'}}>
-        <Button sx={{color: theme.palette.text.primary, fontWeight: 'bold' }} size="small" onClick={() => setScenario(null)}><KeyboardDoubleArrowLeft /> Go Back</Button>
+        <Button sx={{color: theme.palette.text.primary, fontWeight: 'bold' }} size="small" onClick={() => navigate("/")}><KeyboardDoubleArrowLeft /> Go Back</Button>
       </CardActions>
     </Card>
   );
