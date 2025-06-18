@@ -14,7 +14,7 @@ const CharacterTooltip = ({name, text}: ICharacterTooltipProps) => {
   return (
     <Tooltip sx={{"& .MuiTooltip-arrow": { fontSize: "large"}}} arrow title={
       <React.Fragment>
-        <Typography component={'span'} color="inherit">{name}</Typography>
+        <Typography component={'span'}>{name}</Typography>
         <Divider sx={{borderColor:'white', marginBottom: '5px'}} />
         <Typography component={'span'} variant="body2">{char?.description}</Typography>
         <br/>
