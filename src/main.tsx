@@ -36,7 +36,6 @@ const initApp = async() => {
   root.render(
     <ThemeProvider theme={theme}>
       <StyledEngineProvider injectFirst>
-          {/* <App /> */}
         <RouterProvider router={router} />
       </StyledEngineProvider>
     </ThemeProvider>
