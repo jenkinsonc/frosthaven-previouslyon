@@ -21,7 +21,7 @@ const CharacterTooltip = ({name, text}: ICharacterTooltipProps) => {
         <Typography component={'span'} variant="overline">{char?.firstAppearance && `First appearance: ${char?.firstAppearance}`}</Typography>
       </React.Fragment>
     }>
-      <Typography component={'span'} display="inline" sx={{fontWeight: 'bold'}}>{text}</Typography>
+      <Typography component={'span'} sx={{ display: "inline", fontWeight: 'bold' }}>{text}</Typography>
     </Tooltip>
   );
 };

@@ -24,22 +24,15 @@ const ScenarioCard = () => {
     <Card sx={{width: '80vw', maxWidth: '80vw'}}>
       <CardHeader
         title={
-          <Grid container direction="row" justifyContent="space-between" alignItems="center">
+          <Grid container sx={{ justifyContent: "space-between", alignItems: "center" }}>
             <Grid>
               {`${scenario.id} - ${scenario.name}`}
             </Grid>
             <Grid>
               <Tooltip title={<Typography variant="body1">{scenario.type.name}</Typography>}>
-              <Box sx={{
-                border: '1px solid black',
-                borderRadius: '25px',
-                backgroundColor: scenario.type.color,
-                width: '45px',
-                textAlign: 'center'}}>
-
-              <Typography variant="h4" sx={{fontFamily: 'Gloomhaven', color: scenario.type.textColor}}>{scenario.id}</Typography>
-
-            </Box>
+                <Box sx={{ border: '1px solid black', borderRadius: '25px', backgroundColor: scenario.type.color, width: '45px', textAlign: 'center'}}>
+                  <Typography variant="h4" sx={{fontFamily: 'Gloomhaven', color: scenario.type.textColor}}>{scenario.id}</Typography>
+                </Box>
               </Tooltip>
             </Grid>
           </Grid>

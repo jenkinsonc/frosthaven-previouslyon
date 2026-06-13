@@ -1,7 +1,6 @@
 import { ConfigEnv, UserConfigExport, defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { execSync } from 'child_process';
-import tsConfigPaths from 'vite-tsconfig-paths';
 
 const Package = require("./package.json");
 
@@ -23,8 +22,9 @@ export default ( {mode}: ConfigEnv) => {
   }
 
   const configOptions: UserConfigExport = {
+    resolve: { tsconfigPaths: true },
     base: isProd ? '/frosthaven-previouslyon/' : '',
-    plugins: [react(), tsConfigPaths()],
+    plugins: [react()],
     build: {
       minify: isProd? 'esbuild' : false,
       chunkSizeWarningLimit: 2000
